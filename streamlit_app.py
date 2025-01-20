@@ -188,7 +188,7 @@ with st.container():
         num_chunks = st.slider("Knowledge Depth", min_value=1, max_value=20, value=5, 
                              help="Adjust how deep the wizard searches for knowledge")
     with col2:
-        model_name = st.selectbox("AI Model", ["mistral-7b"], index=0)
+        model_name = st.selectbox("AI Model", ["mistral-large2"], index=0)
 
     # Submit button
     if st.button("Ask the Wizard 🎯", key="send_button"):
